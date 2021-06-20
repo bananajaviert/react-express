@@ -1,0 +1,40 @@
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-bar {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+form input {
+    padding: .8rem;
+    outline: none;
+    border: none;
+    margin: .1rem;
+}
+
+form input[type='text'] {
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+}
+
+form input[type='text']:focus { 
+    border-bottom: 2px solid green;
+}
+
+
+form input[type='submit']{
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type='submit']:focus {
+    transform: scale(.95);
+}

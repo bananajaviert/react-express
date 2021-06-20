@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --safari-border: 0 0 7px grey;
+  --box-shadow: 0 0 7px grey;
+}
+
+.album-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  padding: 3rem;
+  width: fit-content;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10pt;
+  font-family: var(--poppins);
+  -webkit-box-shadow: var(--safari-border);
+          box-shadow: var(--box-shadow);
+  transition: .2s all ease;
+  cursor: pointer;
+}
+
+.album:hover {
+  transform: scale(1.02)
+}
+
+.album-desc {
+  width: 15rem;
+}
+
+.album img {
+  max-width: 13rem;
+  border-radius: 7pt;
+}
+
+@media only screen and (max-width: 768px) {
+  .album {
+    flex-direction: column;
+  }
+
+  .album div, img {
+    margin: 1rem;
+  }
+
+  .album-desc {
+    text-align: center;
+  }
+}
